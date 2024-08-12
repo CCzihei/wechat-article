@@ -1,0 +1,33 @@
+{
+    "name": "chenzh/wechat-article",
+    "alias": "WechatArticle",
+    "description": "公众号文章管理",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://gitee.com/1575810034/wechat-article.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chenzh",
+            "email": "1575810034@"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0",
+        "overtrue/wechat":"~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chenzh\\WechatArticle\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Chenzh\\WechatArticle\\WechatArticleServiceProvider",
+        "laravel": {
+            "providers": [
+                "Chenzh\\WechatArticle\\WechatArticleServiceProvider"
+            ]
+        }
+    }
+}
